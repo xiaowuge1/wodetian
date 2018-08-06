@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #808080;
+    text-decoration: none;
+}
+
+.top_nav {
+    height: 40px;
+    .row {
+        text-align: center;
+        line-height: 40px;
+        >div {
+            height: 40px;
+            border-bottom: 1px solid #000;
+            border-left: 1px solid #000;
+            .wjs_code {
+                position: relative;
+                img {
+                    position: absolute;
+                    left: 0;
+                    top: 28px;
+                    display: none;
+                    transition: 0.5s;
+                    z-index: 10;
+                }
+                &:hover img {
+                    display: block;
+                }
+            }
+        }
+        >div:nth-child(1) {
+            border-left: none;
+        }
+    }
+}
+
+#wjs_nav {
+    a {
+        height: 80px;
+        line-height: 80px;
+        padding-bottom: 0;
+        padding-top: 0;
+    }
+    .navbar {
+        margin-bottom: 0;
+        .navbar-header {
+            height: 80px;
+            .navbar-brand {
+                padding-top: 7px; // float: left;
+                font-size: 70px;
+                .wjsfont-logo {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.wjs_slides {}
+
+.exchange {
+    padding-top: 40px;
+    .row {
+        >div {
+            margin-bottom: 20px;
+            a {
+                color: #808080;
+                .media {
+                    .wjsfont {
+                        font-size: 40px
+                    }
+                }
+            }
+            a:hover {
+                color: red;
+            }
+        }
+    }
+}
+
+.wjs_wait {
+    padding: 30px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    .pull-left {
+        a {
+            color: red;
+            border-bottom: 1px dashed red;
+        }
+    }
+    .pull-right {
+        a {
+            color: #000;
+        }
+    }
+}
+
+.tab-content {
+    .tab-pane {
+        .col-lg-4 {
+            margin-bottom: 20px;
+            .cart_defalut {
+                display: block;
+                position: relative;
+                box-shadow: 0 0 9px 5px #ccc;
+                padding-right: 80px;
+                background-color: #f7f7f7;
+                .cart_content {
+                    padding: 0 5px;
+                    height: 100%;
+                    h4 {
+                        text-align: center;
+                        padding-top: 20px;
+                    }
+                    .wjsfont {
+                        position: absolute;
+                        font-size: 40px;
+                        top: 0;
+                        left: 0px;
+                        background-color: red;
+                        color: #fff;
+                    }
+                    .pull-left {
+                        width: 50%;
+                        div {
+                            margin: 10px 0;
+                        }
+                    }
+                    .pull-right {
+                        width: 50%;
+                        div {
+                            margin: 5px 0;
+                            .progress-bar {
+                                height: 100%;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+                .cart_rate {
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 80px;
+                    text-align: center;
+                    padding-top: 50px;
+                    border-left: 1px dashed #ccc;
+                    .tips {
+                        span:nth-child(1) {
+                            border: 1px solid green;
+                            color: green;
+                        }
+                        span:nth-of-type(2) {
+                            border: 1px solid red;
+                            color: red;
+                        }
+                    }
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #fff;
+                        top: -10px;
+                        left: -10px;
+                        border-bottom-left-radius: 50%;
+                        border-bottom-right-radius: 50%;
+                        box-shadow: 0 3px 0 0 #ccc;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #fff;
+                        bottom: -10px;
+                        left: -10px;
+                        border-top-left-radius: 50%;
+                        border-top-right-radius: 50%;
+                        box-shadow: 0 -3px 0 0 #ccc;
+                    }
+                }
+            }
+            .cart_exp {
+                background-color: red;
+                color: #fff;
+            }
+        }
+    }
+}

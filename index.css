@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: #808080;
+  text-decoration: none;
+}
+
+.top_nav {
+  height: 40px;
+}
+
+.top_nav .row {
+  text-align: center;
+  line-height: 40px;
+}
+
+.top_nav .row > div {
+  height: 40px;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+
+.top_nav .row > div .wjs_code {
+  position: relative;
+}
+
+.top_nav .row > div .wjs_code img {
+  position: absolute;
+  left: 0;
+  top: 28px;
+  display: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.top_nav .row > div .wjs_code:hover img {
+  display: block;
+}
+
+.top_nav .row > div:nth-child(1) {
+  border-left: none;
+}
+
+#wjs_nav a {
+  height: 80px;
+  line-height: 80px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+#wjs_nav .navbar {
+  margin-bottom: 0;
+}
+
+#wjs_nav .navbar .navbar-header {
+  height: 80px;
+}
+
+#wjs_nav .navbar .navbar-header .navbar-brand {
+  padding-top: 7px;
+  font-size: 70px;
+}
+
+#wjs_nav .navbar .navbar-header .navbar-brand .wjsfont-logo {
+  color: red;
+}
+
+.exchange {
+  padding-top: 40px;
+}
+
+.exchange .row > div {
+  margin-bottom: 20px;
+}
+
+.exchange .row > div a {
+  color: #808080;
+}
+
+.exchange .row > div a .media .wjsfont {
+  font-size: 40px;
+}
+
+.exchange .row > div a:hover {
+  color: red;
+}
+
+.wjs_wait {
+  padding: 30px 0;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.wjs_wait .pull-left a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+
+.wjs_wait .pull-right a {
+  color: #000;
+}
+
+.tab-content .tab-pane .col-lg-4 {
+  margin-bottom: 20px;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut {
+  display: block;
+  position: relative;
+  -webkit-box-shadow: 0 0 9px 5px #ccc;
+          box-shadow: 0 0 9px 5px #ccc;
+  padding-right: 80px;
+  background-color: #f7f7f7;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_content {
+  padding: 0 5px;
+  height: 100%;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_content h4 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_content .wjsfont {
+  position: absolute;
+  font-size: 40px;
+  top: 0;
+  left: 0px;
+  background-color: red;
+  color: #fff;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_content .pull-left {
+  width: 50%;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_content .pull-left div {
+  margin: 10px 0;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_content .pull-right {
+  width: 50%;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_content .pull-right div {
+  margin: 5px 0;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_content .pull-right div .progress-bar {
+  height: 100%;
+  margin: 0;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_rate {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  text-align: center;
+  padding-top: 50px;
+  border-left: 1px dashed #ccc;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_rate .tips span:nth-child(1) {
+  border: 1px solid green;
+  color: green;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_rate .tips span:nth-of-type(2) {
+  border: 1px solid red;
+  color: red;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_rate:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  top: -10px;
+  left: -10px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  -webkit-box-shadow: 0 3px 0 0 #ccc;
+          box-shadow: 0 3px 0 0 #ccc;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_defalut .cart_rate:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  bottom: -10px;
+  left: -10px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  -webkit-box-shadow: 0 -3px 0 0 #ccc;
+          box-shadow: 0 -3px 0 0 #ccc;
+}
+
+.tab-content .tab-pane .col-lg-4 .cart_exp {
+  background-color: red;
+  color: #fff;
+}
+/*# sourceMappingURL=index.css.map */
